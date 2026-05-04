@@ -1,0 +1,17 @@
+# Smart Home Security Audit - Dependencias
+#
+# Todo es OPCIONAL pero muy recomendado:
+#
+# - rich: mejora drásticamente la interfaz (colores, progress bars, tablas)
+#
+# Para instalar:
+#   pip install -r requirements.txt
+#
+# Si no instalas nada, el script funciona igual pero con salida básica.
+
+rich>=13.0.0
+
+# Para futuros módulos (Wi-Fi y Sniffing):
+# scapy>=2.5.0       # sniffing pasivo
+# python-whois>=0.8  # información de dominios
+# dnspython>=2.4.0   # análisis DNS
