@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartHome Security | Auditoría de Seguridad en Viviendas Inteligentes</title>
+    <meta name="description" content="Proyecto de auditoría de seguridad en viviendas inteligentes. Ciberseguridad doméstica, IoT, análisis de vulnerabilidades y protección de redes domésticas.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🛡️</div>
+                <span>SmartHome Security</span>
+            </a>
+            <button class="menu-toggle" aria-label="Menú">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="scripts.html">Scripts</a></li>
+                <li><a href="about.html">Sobre el Proyecto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-visual left">🏠</div>
+        <div class="hero-visual right">🔒</div>
+        <div class="hero-content fade-in">
+            <span class="hero-badge">Proyecto Final · ASIX · Ciberseguridad</span>
+            <h1>Auditoría de Seguridad en Viviendas Inteligentes</h1>
+            <p>Un análisis profundo de las vulnerabilidades en los entornos domóticos modernos. Porque tu hogar inteligente debería ser también un hogar seguro.</p>
+            <div class="hero-buttons">
+                <a href="scripts.html" class="btn btn-primary">
+                    ⬇️ Descargar Scripts
+                </a>
+                <a href="about.html" class="btn btn-secondary">
+                    📖 Sobre el Proyecto
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ¿POR QUÉ ES IMPORTANTE? -->
+    <section class="section">
+        <div class="section-container">
+            <h2 class="section-title">¿Por qué es <span>importante</span>?</h2>
+            <p class="section-subtitle">
+                Cada día más hogares incorporan dispositivos conectados. Cámaras, asistentes de voz, bombillas inteligentes, cerraduras, electrodomésticos... pero la mayoría no están protegidos como deberían.
+            </p>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🌐</div>
+                    <h3>Todo está conectado</h3>
+                    <p>Un hogar medio tiene entre 10 y 20 dispositivos IoT conectados a la misma red. Cada uno es una posible puerta de entrada.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">⚠️</div>
+                    <h3>Configuración por defecto</h3>
+                    <p>La mayoría de usuarios nunca cambia las contraseñas de fábrica de sus routers ni dispositivos. Un atacante lo sabe.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">📡</div>
+                    <h3>Protocolos vulnerables</h3>
+                    <p>WPA2 antiguo, WPS activado, SSID visibles... muchas redes domésticas usan configuraciones que se rompen en minutos.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🎥</div>
+                    <h3>Privacidad en juego</h3>
+                    <p>Cámaras, micrófonos y sensores en casa. Si alguien accede, puede escuchar, ver y saber cuándo estás fuera.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🔐</div>
+                    <h3>Falta de actualizaciones</h3>
+                    <p>Muchos dispositivos IoT no reciben parches de seguridad. Una vulnerabilidad conocida puede quedar abierta años.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">💰</div>
+                    <h3>Ataques rentables</h3>
+                    <p>Botnets como Mirai demostraron que las redes domésticas son un objetivo masivo para ciberdelincuentes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTADÍSTICAS REALES -->
+    <section class="section stats-section">
+        <div class="section-container">
+            <h2 class="section-title">Los datos no <span>mienten</span></h2>
+            <p class="section-subtitle">Cifras recientes sobre el estado de la seguridad en los hogares inteligentes</p>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 data-count="21">21B</h3>
+                    <p>Dispositivos IoT conectados en el mundo (IoT Analytics, 2025)</p>
+                </div>
+                <div class="stat-item">
+                    <h3 data-count="15.72">15.72 Tbps</h3>
+                    <p>Ataque DDoS récord bloqueado por Azure en 2026</p>
+                </div>
+                <div class="stat-item">
+                    <h3 data-count="24">+24%</h3>
+                    <p>Aumento de servidores C&C de botnets (Spamhaus, 2025)</p>
+                </div>
+                <div class="stat-item">
+                    <h3 data-count="116">116</h3>
+                    <p>Variantes activas del malware Mirai identificadas</p>
+                </div>
+            </div>
+
+            <p style="text-align: center; margin-top: 2rem; color: var(--text-muted); font-size: 0.85rem;">
+                Fuentes: <a href="https://es.vectra.ai/topics/iot-security" target="_blank" style="color: var(--accent-primary);">Vectra AI</a> ·
+                <a href="https://www.globalsign.com/es/blog/seguridad-iot-finalmente-madurara-en-2026" target="_blank" style="color: var(--accent-primary);">GlobalSign</a> ·
+                <a href="https://blog.barracuda.com/2026/04/13/top-threat-trends-of-the-2025-botnet-landscape" target="_blank" style="color: var(--accent-primary);">Barracuda Networks</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- ¿QUÉ HACE EL PROYECTO? (formato alternativo: lista horizontal con separadores) -->
+    <section class="section">
+        <div class="section-container">
+            <h2 class="section-title">¿Qué hace este <span>proyecto</span>?</h2>
+            <p class="section-subtitle">
+                Una auditoría completa, práctica y reproducible para detectar, analizar y corregir los problemas de seguridad más comunes en una vivienda inteligente.
+            </p>
+
+            <div class="features-split">
+                <div class="feature-row">
+                    <div class="feature-row-icon">🔍</div>
+                    <div class="feature-row-content">
+                        <h3>Análisis de la red</h3>
+                        <p>Escaneo completo de la red WiFi, identificación de dispositivos conectados, análisis de puertos abiertos y servicios expuestos en cada dispositivo.</p>
+                    </div>
+                    <div class="feature-row-tag">Fase 1</div>
+                </div>
+
+                <div class="feature-row">
+                    <div class="feature-row-icon">🧪</div>
+                    <div class="feature-row-content">
+                        <h3>Pruebas controladas</h3>
+                        <p>Simulación de ataques en un entorno aislado: fuerza bruta, desautenticación WiFi, análisis Bluetooth, pruebas con Flipper Zero.</p>
+                    </div>
+                    <div class="feature-row-tag">Fase 2</div>
+                </div>
+
+                <div class="feature-row">
+                    <div class="feature-row-icon">📊</div>
+                    <div class="feature-row-content">
+                        <h3>Evaluación de riesgos</h3>
+                        <p>Clasificación de vulnerabilidades según su criticidad (CVSS), impacto potencial y probabilidad de explotación real.</p>
+                    </div>
+                    <div class="feature-row-tag">Fase 3</div>
+                </div>
+
+                <div class="feature-row">
+                    <div class="feature-row-icon">🛠️</div>
+                    <div class="feature-row-content">
+                        <h3>Scripts automatizados</h3>
+                        <p>Herramientas propias en Bash y PowerShell para automatizar gran parte del proceso de auditoría, pensadas para usuarios reales.</p>
+                    </div>
+                    <div class="feature-row-tag">Fase 4</div>
+                </div>
+
+                <div class="feature-row">
+                    <div class="feature-row-icon">📋</div>
+                    <div class="feature-row-content">
+                        <h3>Informe detallado</h3>
+                        <p>Comparativa del estado "antes" y "después", con recomendaciones concretas y medibles para mejorar la seguridad del entorno.</p>
+                    </div>
+                    <div class="feature-row-tag">Fase 5</div>
+                </div>
+
+                <div class="feature-row">
+                    <div class="feature-row-icon">🎓</div>
+                    <div class="feature-row-content">
+                        <h3>Guía para no técnicos</h3>
+                        <p>Pautas simples para cualquier usuario doméstico: cómo configurar el router, segmentar la red y proteger los dispositivos IoT.</p>
+                    </div>
+                    <div class="feature-row-tag">Fase 6</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOMÓTICA + CIBERSEGURIDAD -->
+    <section class="section">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>Domótica y ciberseguridad: un matrimonio obligatorio</h2>
+                    <p>La domótica ha pasado de ser un lujo a una comodidad cotidiana. Enciendes la luz con la voz, abres la puerta desde el móvil, el robot aspirador sabe el plano exacto de tu casa.</p>
+                    <p>Pero cada función "inteligente" añade una nueva superficie de ataque. Y mientras los fabricantes compiten por lanzar el próximo gadget, la seguridad suele quedar en segundo plano.</p>
+                    <p>Este proyecto demuestra, con pruebas reales, qué se puede hacer hoy para proteger tu hogar. No se trata de renunciar a la tecnología, sino de usarla con criterio.</p>
+
+                    <a href="about.html" class="btn btn-primary" style="margin-top: 1.5rem;">
+                        Conocer más →
+                    </a>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Fase 1 · Reconocimiento</h4>
+                        <p>Inventario de dispositivos, mapa de red, identificación de vectores de entrada.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Fase 2 · Análisis</h4>
+                        <p>Escaneo de vulnerabilidades, auditoría de configuraciones, pruebas de protocolos.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Fase 3 · Explotación controlada</h4>
+                        <p>Simulación de ataques en laboratorio con Kali Linux y Flipper Zero.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Fase 4 · Mitigación</h4>
+                        <p>Aplicación de contramedidas, endurecimiento del router y segmentación de red.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Fase 5 · Validación</h4>
+                        <p>Reauditoría y comparativa antes/después para medir la mejora real.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section">
+        <div class="section-container">
+            <div class="cta-banner">
+                <div class="cta-icon">🚀</div>
+                <h3>¿Quieres probar la auditoría en tu propia casa?</h3>
+                <p>Descarga los scripts desarrollados en este proyecto y haz una primera evaluación de la seguridad de tu red doméstica en pocos minutos.</p>
+                <div class="cta-buttons">
+                    <a href="scripts.html" class="btn btn-primary">Ir a Scripts ⬇️</a>
+                    <a href="blog.html" class="btn btn-secondary">Leer el blog 📰</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>SmartHome Security</h4>
+                <p>Proyecto Final del Grado Superior en Administración de Sistemas Informáticos en Red.</p>
+                <p style="margin-top: 1rem;"><strong>Guillem Villanueva Monclús</strong></p>
+                <p>Vedruna Vall · Terrassa</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="scripts.html">Scripts</a></li>
+                    <li><a href="about.html">Sobre el Proyecto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="https://www.incibe.es/" target="_blank" rel="noopener">INCIBE</a></li>
+                    <li><a href="https://www.osi.es/" target="_blank" rel="noopener">OSI</a></li>
+                    <li><a href="https://owasp.org/www-project-internet-of-things/" target="_blank" rel="noopener">OWASP IoT</a></li>
+                    <li><a href="https://nvd.nist.gov/" target="_blank" rel="noopener">NVD · CVE Database</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="#">📧 guillem.villanueva@example.com</a></li>
+                    <li><a href="#">🐙 GitHub</a></li>
+                    <li><a href="#">💼 LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 SmartHome Security · Proyecto Final Guillem Villanueva · Hecho con 💙 y mucha cafeína</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

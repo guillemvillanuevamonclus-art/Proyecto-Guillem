@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scripts de Auditoría | SmartHome Security</title>
+    <meta name="description" content="Descarga los scripts de auditoría de seguridad para Linux y Windows. Herramientas automatizadas para analizar la seguridad de tu red doméstica.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🛡️</div>
+                <span>SmartHome Security</span>
+            </a>
+            <button class="menu-toggle" aria-label="Menú">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="scripts.html" class="active">Scripts</a></li>
+                <li><a href="about.html">Sobre el Proyecto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SCRIPTS -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="hero-content fade-in">
+            <span class="hero-badge">💻 Open Source · Uso ético</span>
+            <h1>Scripts de Auditoría</h1>
+            <p>Herramientas desarrolladas como parte del proyecto para automatizar la detección de vulnerabilidades en redes domésticas. Listas para usar en tu propia red.</p>
+        </div>
+    </section>
+
+    <!-- AVISO LEGAL -->
+    <section class="section" style="padding-top: 2rem; padding-bottom: 1rem;">
+        <div class="section-container">
+            <div class="warning-box">
+                <div class="icon">⚠️</div>
+                <div>
+                    <h4>Aviso importante sobre el uso ético</h4>
+                    <p>Estos scripts están diseñados para <strong>auditar tu propia red</strong>. Ejecutarlos sobre redes que no son tuyas o sin consentimiento explícito del propietario es ilegal en la mayoría de países y puede acarrear consecuencias legales graves. Úsalos responsablemente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCRIPTS -->
+    <section class="section" style="padding-top: 1rem;">
+        <div class="section-container">
+            <h2 class="section-title">Descarga los <span>scripts</span></h2>
+            <p class="section-subtitle">
+                Dos versiones completas: una para sistemas Linux (Bash) y otra para Windows (PowerShell). Ambas realizan un análisis inicial de la seguridad de tu red.
+            </p>
+
+            <div class="scripts-grid">
+
+                <!-- SCRIPT LINUX -->
+                <div class="script-card">
+                    <div class="script-header">
+                        <div class="script-icon linux">🐧</div>
+                        <div class="script-title">
+                            <h3>Linux · Bash</h3>
+                            <div class="version">smarthome-audit.sh · v1.0</div>
+                        </div>
+                    </div>
+
+                    <p class="script-description">
+                        Script de auditoría para sistemas Linux (probado en Kali, Ubuntu y Debian). Automatiza escaneos de red, análisis WiFi y detección de servicios expuestos.
+                    </p>
+
+                    <ul class="script-features">
+                        <li>Escaneo de la red con <code>nmap</code></li>
+                        <li>Análisis de configuración WiFi</li>
+                        <li>Detección de puertos y servicios abiertos</li>
+                        <li>Comprobación de contraseñas débiles</li>
+                        <li>Informe automático en TXT y HTML</li>
+                        <li>Modo verbose y silencioso</li>
+                    </ul>
+
+                    <div class="script-meta">
+                        <div class="meta-item">
+                            <div class="label">Tamaño</div>
+                            <div class="value">~12 KB</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="label">Licencia</div>
+                            <div class="value">MIT</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="label">Requisitos</div>
+                            <div class="value">bash, nmap</div>
+                        </div>
+                    </div>
+
+                    <a href="scripts/smarthome-audit-linux.zip" download class="download-btn">
+                        ⬇️ Descargar (ZIP)
+                    </a>
+
+                    <div style="margin-top: 1.5rem;">
+                        <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem;">Uso rápido (después de descomprimir):</p>
+                        <div class="code-block" style="margin: 0;">chmod +x smarthome-audit.sh && sudo ./smarthome-audit.sh</div>
+                    </div>
+                </div>
+
+                <!-- SCRIPT WINDOWS -->
+                <div class="script-card">
+                    <span class="coming-soon-badge">Próximamente</span>
+
+                    <div class="script-header">
+                        <div class="script-icon windows">🪟</div>
+                        <div class="script-title">
+                            <h3>Windows · PowerShell</h3>
+                            <div class="version">smarthome-audit.ps1 · v1.0</div>
+                        </div>
+                    </div>
+
+                    <p class="script-description">
+                        Versión para sistemas Windows 10/11. Aprovecha PowerShell para realizar un análisis equivalente sin necesidad de instalar herramientas externas.
+                    </p>
+
+                    <ul class="script-features">
+                        <li>Escaneo de la red local</li>
+                        <li>Análisis de perfiles WiFi guardados</li>
+                        <li>Detección de puertos con PowerShell nativo</li>
+                        <li>Comprobación del Firewall de Windows</li>
+                        <li>Informe HTML generado automáticamente</li>
+                        <li>No requiere instalaciones adicionales</li>
+                    </ul>
+
+                    <div class="script-meta">
+                        <div class="meta-item">
+                            <div class="label">Tamaño</div>
+                            <div class="value">~10 KB</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="label">Licencia</div>
+                            <div class="value">MIT</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="label">Requisitos</div>
+                            <div class="value">PS 5.1+</div>
+                        </div>
+                    </div>
+
+                    <button class="download-btn disabled" disabled>
+                        🔒 En desarrollo
+                    </button>
+
+                    <div style="margin-top: 1.5rem;">
+                        <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem;">Uso previsto:</p>
+                        <div class="code-block" style="margin: 0;">Set-ExecutionPolicy RemoteSigned && .\smarthome-audit.ps1</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPARATIVA DE VERSIONES -->
+    <section class="section">
+        <div class="section-container">
+            <h2 class="section-title">Comparativa de <span>versiones</span></h2>
+            <p class="section-subtitle">Qué incluye cada versión del script y cuándo usar una u otra</p>
+
+            <div class="compare-table">
+                <div class="compare-header">
+                    <div class="compare-cell header-cell">Característica</div>
+                    <div class="compare-cell header-cell">🐧 Linux (Bash)</div>
+                    <div class="compare-cell header-cell">🪟 Windows (PS)</div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell">Escaneo de red con nmap</div>
+                    <div class="compare-cell"><span class="check">✓</span></div>
+                    <div class="compare-cell"><span class="cross">✗</span> (usa Test-NetConnection)</div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell">Análisis de WiFi</div>
+                    <div class="compare-cell"><span class="check">✓</span> Completo</div>
+                    <div class="compare-cell"><span class="check">✓</span> Perfiles guardados</div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell">Detección de IoT común</div>
+                    <div class="compare-cell"><span class="check">✓</span></div>
+                    <div class="compare-cell"><span class="check">✓</span></div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell">Auditoría del router</div>
+                    <div class="compare-cell"><span class="check">✓</span></div>
+                    <div class="compare-cell"><span class="check">✓</span></div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell">Informe HTML</div>
+                    <div class="compare-cell"><span class="check">✓</span></div>
+                    <div class="compare-cell"><span class="check">✓</span></div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell">Dependencias externas</div>
+                    <div class="compare-cell">nmap</div>
+                    <div class="compare-cell">Ninguna</div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell">Requiere privilegios</div>
+                    <div class="compare-cell">sudo</div>
+                    <div class="compare-cell">Admin (opcional)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA (formato roadmap horizontal) -->
+    <section class="section stats-section">
+        <div class="section-container">
+            <h2 class="section-title">¿Cómo <span>funcionan</span>?</h2>
+            <p class="section-subtitle">Los scripts siguen una metodología estándar de auditoría en 4 fases</p>
+
+            <div class="process-flow">
+                <div class="process-step">
+                    <div class="process-number">01</div>
+                    <div class="process-icon">🔍</div>
+                    <h3>Reconocimiento</h3>
+                    <p>Detectan la red local, la puerta de enlace, el rango de IPs y los dispositivos conectados. Todo sin ser intrusivo.</p>
+                </div>
+
+                <div class="process-arrow">→</div>
+
+                <div class="process-step">
+                    <div class="process-number">02</div>
+                    <div class="process-icon">📡</div>
+                    <h3>Análisis</h3>
+                    <p>Escanean puertos, identifican servicios, detectan configuraciones WiFi inseguras (WPS, WPA2 débil, SSID visibles).</p>
+                </div>
+
+                <div class="process-arrow">→</div>
+
+                <div class="process-step">
+                    <div class="process-number">03</div>
+                    <div class="process-icon">⚖️</div>
+                    <h3>Evaluación</h3>
+                    <p>Comparan hallazgos con una base de conocimiento interna y clasifican los problemas por criticidad.</p>
+                </div>
+
+                <div class="process-arrow">→</div>
+
+                <div class="process-step">
+                    <div class="process-number">04</div>
+                    <div class="process-icon">📄</div>
+                    <h3>Informe</h3>
+                    <p>Generan un informe con los resultados, vulnerabilidades encontradas y recomendaciones concretas para corregirlas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EJEMPLO DE SALIDA -->
+    <section class="section">
+        <div class="section-container">
+            <h2 class="section-title">Ejemplo de <span>salida</span></h2>
+            <p class="section-subtitle">Así se ve un análisis real ejecutado en un entorno de pruebas</p>
+
+            <div class="terminal-demo">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="terminal-title">guillem@kali: ~/audit</div>
+                </div>
+                <div class="terminal-body">
+<span style="color: var(--success);">guillem@kali</span>:<span style="color: #00b4d8;">~/audit</span>$ <span style="color: var(--text-primary);">sudo ./smarthome-audit.sh</span>
+
+<span style="color: var(--accent-primary);">┌──────────────────────────────────────────────────────────┐</span>
+<span style="color: var(--accent-primary);">│          SmartHome Security Audit · v1.0                 │</span>
+<span style="color: var(--accent-primary);">│          Guillem Villanueva · Proyecto Final ASIX 2026   │</span>
+<span style="color: var(--accent-primary);">└──────────────────────────────────────────────────────────┘</span>
+
+<span style="color: var(--success);">[✓]</span> Detectando interfaz de red activa...        <span style="color: var(--success);">OK</span>
+<span style="color: var(--success);">[✓]</span> Gateway detectado: <span style="color: var(--accent-primary);">192.168.1.1</span>
+<span style="color: var(--success);">[✓]</span> Rango de red: <span style="color: var(--accent-primary);">192.168.1.0/24</span>
+
+<span style="color: var(--warning);">[*]</span> Escaneando dispositivos conectados...
+    ├─ 192.168.1.1    Router (TP-Link)
+    ├─ 192.168.1.15   Smart TV (Samsung)
+    ├─ 192.168.1.23   Cámara IP (Xiaomi)
+    ├─ 192.168.1.31   Amazon Echo
+    ├─ 192.168.1.42   Bombilla (Tuya)
+    └─ 192.168.1.57   PC
+
+<span style="color: var(--warning);">[!]</span> Hallazgos críticos:
+<span style="color: var(--danger);">  ✗ WPS habilitado en el router (alto riesgo)</span>
+<span style="color: var(--danger);">  ✗ Cámara IP con credenciales por defecto (admin/admin)</span>
+<span style="color: var(--warning);">  ⚠ Puerto 23 (Telnet) abierto en 192.168.1.42</span>
+<span style="color: var(--warning);">  ⚠ Tráfico no cifrado detectado en bombilla Tuya</span>
+
+<span style="color: var(--success);">[✓]</span> Generando informe HTML...            <span style="color: var(--success);">audit-2026-04-23.html</span>
+<span style="color: var(--success);">[✓]</span> Análisis finalizado. Duración: 47 s
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFO ADICIONAL -->
+    <section class="section">
+        <div class="section-container">
+            <div class="info-box">
+                <div class="icon">💡</div>
+                <div>
+                    <h4>¿Eres un usuario no técnico?</h4>
+                    <p>No te preocupes. Los scripts incluyen un modo guiado con mensajes explicativos. Y si prefieres no tocar la terminal, en el <a href="blog.html" style="color: var(--accent-primary);">blog</a> tenemos guías paso a paso para revisar tu router sin código.</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <div class="icon">🔧</div>
+                <div>
+                    <h4>Pensado para mejorar</h4>
+                    <p>Los scripts son open source bajo licencia MIT. Si encuentras bugs o quieres proponer mejoras, puedes abrir un issue o un pull request en el repositorio de GitHub del proyecto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>SmartHome Security</h4>
+                <p>Proyecto Final del Grado Superior en Administración de Sistemas Informáticos en Red.</p>
+                <p style="margin-top: 1rem;"><strong>Guillem Villanueva Monclús</strong></p>
+                <p>Vedruna Vall · Terrassa</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="scripts.html">Scripts</a></li>
+                    <li><a href="about.html">Sobre el Proyecto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="https://www.incibe.es/" target="_blank" rel="noopener">INCIBE</a></li>
+                    <li><a href="https://www.osi.es/" target="_blank" rel="noopener">OSI</a></li>
+                    <li><a href="https://owasp.org/www-project-internet-of-things/" target="_blank" rel="noopener">OWASP IoT</a></li>
+                    <li><a href="https://nvd.nist.gov/" target="_blank" rel="noopener">NVD · CVE Database</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="#">📧 guillem.villanueva@example.com</a></li>
+                    <li><a href="#">🐙 GitHub</a></li>
+                    <li><a href="#">💼 LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 SmartHome Security · Proyecto Final Guillem Villanueva · Hecho con 💙 y mucha cafeína</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

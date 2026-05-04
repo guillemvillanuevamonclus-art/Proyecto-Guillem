@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | SmartHome Security</title>
+    <meta name="description" content="Artículos y noticias reales sobre ciberseguridad doméstica, vulnerabilidades IoT y el estado actual de la seguridad en smart homes.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🛡️</div>
+                <span>SmartHome Security</span>
+            </a>
+            <button class="menu-toggle" aria-label="Menú">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="scripts.html">Scripts</a></li>
+                <li><a href="about.html">Sobre el Proyecto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO BLOG -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="hero-content fade-in">
+            <span class="hero-badge">📰 Actualidad · Análisis · Noticias</span>
+            <h1>El Blog</h1>
+            <p>Una recopilación de noticias reales, vulnerabilidades recientes y casos que afectan directamente a la seguridad de las viviendas inteligentes.</p>
+        </div>
+    </section>
+
+    <!-- DESTACADA -->
+    <section class="section" style="padding-top: 2rem;">
+        <div class="section-container">
+            <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">📌 Noticia <span>destacada</span></h2>
+
+            <a href="https://www.redestelecom.es/conectividad/los-hogares-conectados-sufren-una-media-de-29-ataques-iot-al-dia/" target="_blank" rel="noopener" style="text-decoration: none;">
+                <article class="featured-post">
+                    <div class="featured-image">
+                        <span class="featured-emoji">🚨</span>
+                        <div class="featured-overlay-tag">Bitdefender · Noviembre 2025</div>
+                    </div>
+                    <div class="featured-content">
+                        <div class="featured-meta">
+                            <span class="blog-tag">IoT</span>
+                            <span class="blog-tag" style="background: rgba(239, 71, 111, 0.15); color: #ef476f;">Crítico</span>
+                            <span class="blog-date">3 de noviembre, 2025</span>
+                        </div>
+                        <h2>Los hogares conectados sufren una media de 29 ataques IoT al día</h2>
+                        <p>Un nuevo estudio de Bitdefender revela que los dispositivos del hogar reciben decenas de ataques cada día. Lo más grave: el 99,4% de los ataques se aprovechan de fallos ya identificados y corregidos, pero los usuarios no aplican las actualizaciones. El informe menciona también un ataque DDoS de 22,2 Tbps impulsado por routers domésticos comprometidos.</p>
+                        <div class="featured-source">
+                            <span>Fuente: <strong>Redes Telecom</strong></span>
+                            <span class="read-link">Leer noticia completa →</span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+        </div>
+    </section>
+
+    <!-- FILTROS -->
+    <section class="section" style="padding-top: 2rem; padding-bottom: 1rem;">
+        <div class="section-container">
+            <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">🗂️ Todos los <span>artículos</span></h2>
+            <div class="filter-bar">
+                <button class="filter-chip active" data-filter="all">Todos</button>
+                <button class="filter-chip" data-filter="vulnerabilidades">🚨 Vulnerabilidades</button>
+                <button class="filter-chip" data-filter="iot">🌐 IoT</button>
+                <button class="filter-chip" data-filter="noticias">📰 Noticias</button>
+                <button class="filter-chip" data-filter="guias">📘 Guías</button>
+                <button class="filter-chip" data-filter="analisis">🔬 Análisis</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- LISTA DE ARTÍCULOS (formato horizontal) -->
+    <section class="section" style="padding-top: 1rem;">
+        <div class="section-container">
+            <div class="blog-list" id="blog-grid">
+
+                <!-- Post 1 - INCIBE TriVision -->
+                <a href="https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-camera-nc227wf-de-trivision" target="_blank" rel="noopener" class="blog-row" data-category="vulnerabilidades">
+                    <div class="blog-row-image" style="background: linear-gradient(135deg, #0a1128 0%, #ef476f 100%);">📹</div>
+                    <div class="blog-row-content">
+                        <div class="blog-row-meta">
+                            <span class="blog-tag">Vulnerabilidades</span>
+                            <span class="blog-date">27 de febrero, 2025</span>
+                            <span class="blog-source">INCIBE-CERT</span>
+                        </div>
+                        <h3>Múltiples vulnerabilidades en la cámara IP TriVision NC227WF</h3>
+                        <p>El INCIBE ha coordinado la publicación de 2 vulnerabilidades de severidad alta que afectan a la cámara IP Wi-Fi TriVision NC227WF. Permiten saltar la autenticación y obtener las credenciales del administrador en texto claro.</p>
+                        <span class="read-link">Leer aviso oficial →</span>
+                    </div>
+                </a>
+
+                <!-- Post 2 - Mirai AVTech -->
+                <a href="https://www.revistaciberseguridad.com/2025/01/descubierta-una-nueva-campana-de-la-botnet-mirai-que-afecta-a-camaras-avtech-y-routers-huawei/" target="_blank" rel="noopener" class="blog-row" data-category="vulnerabilidades">
+                    <div class="blog-row-image" style="background: linear-gradient(135deg, #0a1128 0%, #ef476f 100%);">🔓</div>
+                    <div class="blog-row-content">
+                        <div class="blog-row-meta">
+                            <span class="blog-tag">Vulnerabilidades</span>
+                            <span class="blog-date">22 de enero, 2025</span>
+                            <span class="blog-source">Revista Ciberseguridad</span>
+                        </div>
+                        <h3>Murdoc_Botnet: la nueva campaña Mirai que afecta a cámaras AVTech y routers Huawei</h3>
+                        <p>Qualys descubrió esta operación a gran escala con más de 1.300 IPs involucradas. Afecta a dispositivos IoT comunes en hogares y pequeñas oficinas que forman parte de redes de bots controladas remotamente.</p>
+                        <span class="read-link">Leer noticia →</span>
+                    </div>
+                </a>
+
+                <!-- Post 3 - Infoteknico cámaras -->
+                <a href="https://www.infoteknico.com/vulnerabilidades-historicas-en-camaras-ip-2025/" target="_blank" rel="noopener" class="blog-row" data-category="analisis">
+                    <div class="blog-row-image" style="background: linear-gradient(135deg, #0a1128 0%, #ffb703 100%);">📊</div>
+                    <div class="blog-row-content">
+                        <div class="blog-row-meta">
+                            <span class="blog-tag">Análisis</span>
+                            <span class="blog-date">Diciembre 2025</span>
+                            <span class="blog-source">Infoteknico</span>
+                        </div>
+                        <h3>Vulnerabilidades históricas en cámaras IP que aún afectan en 2025</h3>
+                        <p>Más del 60% de los sistemas de vigilancia con cámaras IP siguen operando con firmware sin parchear. Modelos activos de Edimax, Ubiquiti, Dahua, Hikvision o ACTi siguen siendo explotables hoy con fallos descubiertos hace años.</p>
+                        <span class="read-link">Leer análisis →</span>
+                    </div>
+                </a>
+
+                <!-- Post 4 - Infobae 2026 -->
+                <a href="https://www.infobae.com/tecno/2025/12/26/las-5-configuraciones-clave-que-debes-hacer-a-tu-router-wifi-para-evitar-ataques-ciberneticos-en-2026/" target="_blank" rel="noopener" class="blog-row" data-category="guias">
+                    <div class="blog-row-image" style="background: linear-gradient(135deg, #0a1128 0%, #00f5a0 100%);">🔧</div>
+                    <div class="blog-row-content">
+                        <div class="blog-row-meta">
+                            <span class="blog-tag">Guías</span>
+                            <span class="blog-date">26 de diciembre, 2025</span>
+                            <span class="blog-source">Infobae</span>
+                        </div>
+                        <h3>Las 5 configuraciones clave del router WiFi para evitar ataques en 2026</h3>
+                        <p>Una guía práctica con las medidas básicas que debes aplicar a tu router doméstico para protegerlo: cifrado WPA3, actualización del firmware, contraseñas seguras y desactivación de servicios innecesarios.</p>
+                        <span class="read-link">Leer guía →</span>
+                    </div>
+                </a>
+
+                <!-- Post 5 - INCIBE WPA3 -->
+                <a href="https://www.incibe.es/ciudadania/blog/wpa3-el-protocolo-de-seguridad-configurar-en-tu-router" target="_blank" rel="noopener" class="blog-row" data-category="guias">
+                    <div class="blog-row-image" style="background: linear-gradient(135deg, #0a1128 0%, #00f5a0 100%);">📡</div>
+                    <div class="blog-row-content">
+                        <div class="blog-row-meta">
+                            <span class="blog-tag">Guías</span>
+                            <span class="blog-date">INCIBE</span>
+                            <span class="blog-source">incibe.es</span>
+                        </div>
+                        <h3>WPA3: el protocolo de seguridad que deberías configurar en tu router</h3>
+                        <p>El INCIBE explica por qué WPA3 es significativamente más seguro que WPA2. Introduce el modo SAE que resiste ataques de diccionario y mejora el cifrado a 192 bits frente a los 128 anteriores.</p>
+                        <span class="read-link">Leer guía oficial →</span>
+                    </div>
+                </a>
+
+                <!-- Post 6 - INCIBE robo smart-home -->
+                <a href="https://www.incibe.es/ciudadania/blog/robo-en-una-smart-home" target="_blank" rel="noopener" class="blog-row" data-category="iot">
+                    <div class="blog-row-image" style="background: linear-gradient(135deg, #0a1128 0%, #00d4ff 100%);">🏠</div>
+                    <div class="blog-row-content">
+                        <div class="blog-row-meta">
+                            <span class="blog-tag">IoT</span>
+                            <span class="blog-date">INCIBE</span>
+                            <span class="blog-source">incibe.es</span>
+                        </div>
+                        <h3>Robo en una smart-home: cómo proteger tu hogar inteligente</h3>
+                        <p>Un caso narrado por el INCIBE sobre cómo una vivienda inteligente puede ser objetivo de ciberataques. Repasa los riesgos del IoT y las medidas básicas que cualquier usuario doméstico puede aplicar.</p>
+                        <span class="read-link">Leer artículo →</span>
+                    </div>
+                </a>
+
+                <!-- Post 7 - The Hacker News Mirai 2026 -->
+                <a href="https://thehackernews.com/2026/04/mirai-variant-nexcorium-exploits-cve.html" target="_blank" rel="noopener" class="blog-row" data-category="vulnerabilidades">
+                    <div class="blog-row-image" style="background: linear-gradient(135deg, #0a1128 0%, #ef476f 100%);">⚡</div>
+                    <div class="blog-row-content">
+                        <div class="blog-row-meta">
+                            <span class="blog-tag">Vulnerabilidades</span>
+                            <span class="blog-date">18 de abril, 2026</span>
+                            <span class="blog-source">The Hacker News</span>
+                        </div>
+                        <h3>Variante Mirai "Nexcorium" explota CVE-2024-3721 en DVRs TBK</h3>
+                        <p>Una nueva campaña detectada por Fortinet y Palo Alto Networks aprovecha vulnerabilidades en grabadores TBK DVR-4104/4216 y routers TP-Link descatalogados para reclutar dispositivos en una botnet DDoS.</p>
+                        <span class="read-link">Leer análisis técnico →</span>
+                    </div>
+                </a>
+
+                <!-- Post 8 - WeLiveSecurity Mirai -->
+                <a href="https://www.welivesecurity.com/es/seguridad-iot/botnet-mirai-electrodomesticos-pueden-atacarnos/" target="_blank" rel="noopener" class="blog-row" data-category="iot">
+                    <div class="blog-row-image" style="background: linear-gradient(135deg, #0a1128 0%, #00d4ff 100%);">🤖</div>
+                    <div class="blog-row-content">
+                        <div class="blog-row-meta">
+                            <span class="blog-tag">IoT</span>
+                            <span class="blog-date">WeLiveSecurity</span>
+                            <span class="blog-source">ESET</span>
+                        </div>
+                        <h3>Botnet Mirai: ¿pueden atacarnos nuestros propios electrodomésticos?</h3>
+                        <p>Un análisis de ESET sobre cómo la botnet Mirai sigue siendo una amenaza activa. Routers, cámaras, televisores, frigoríficos... cualquier dispositivo IoT mal configurado puede ser parte del ejército zombie.</p>
+                        <span class="read-link">Leer artículo →</span>
+                    </div>
+                </a>
+
+                <!-- Post 9 - INCIBE PTZOptics -->
+                <a href="https://www.incibe.es/incibe-cert/alerta-temprana/avisos-sci/multiples-vulnerabilidades-en-camaras-de-videovigilancia-la-mayoria-ptzoptics" target="_blank" rel="noopener" class="blog-row" data-category="vulnerabilidades">
+                    <div class="blog-row-image" style="background: linear-gradient(135deg, #0a1128 0%, #ef476f 100%);">🎥</div>
+                    <div class="blog-row-content">
+                        <div class="blog-row-meta">
+                            <span class="blog-tag">Vulnerabilidades</span>
+                            <span class="blog-date">13 de junio, 2025</span>
+                            <span class="blog-source">INCIBE-CERT</span>
+                        </div>
+                        <h3>Múltiples vulnerabilidades críticas en cámaras de videovigilancia PTZOptics</h3>
+                        <p>Cuatro vulnerabilidades, tres de severidad crítica, permiten filtrar datos confidenciales, ejecutar comandos arbitrarios y acceder a la interfaz web de administración con credenciales hardcodeadas.</p>
+                        <span class="read-link">Leer aviso oficial →</span>
+                    </div>
+                </a>
+
+                <!-- Post 10 - HoyTech WiFi 2025 -->
+                <a href="https://hoytech.net/ciberseguridad/seguridad-wifi-2025-proteger-red/" target="_blank" rel="noopener" class="blog-row" data-category="guias">
+                    <div class="blog-row-image" style="background: linear-gradient(135deg, #0a1128 0%, #00f5a0 100%);">🔐</div>
+                    <div class="blog-row-content">
+                        <div class="blog-row-meta">
+                            <span class="blog-tag">Guías</span>
+                            <span class="blog-date">28 de abril, 2025</span>
+                            <span class="blog-source">HoyTech</span>
+                        </div>
+                        <h3>Seguridad WiFi en 2025: guía definitiva para proteger tu red de hackers</h3>
+                        <p>Según Check Point Research, el 47% de los routers domésticos tienen al menos una vulnerabilidad crítica explotable. Esta guía repasa qué pasos seguir para mitigar el riesgo en pocos minutos.</p>
+                        <span class="read-link">Leer guía →</span>
+                    </div>
+                </a>
+
+                <!-- Post 11 - Tecnek Mirai -->
+                <a href="https://www.tecnek.com/news/botnet-mirai-una-nueva-amenaza/" target="_blank" rel="noopener" class="blog-row" data-category="analisis">
+                    <div class="blog-row-image" style="background: linear-gradient(135deg, #0a1128 0%, #ffb703 100%);">📈</div>
+                    <div class="blog-row-content">
+                        <div class="blog-row-meta">
+                            <span class="blog-tag">Análisis</span>
+                            <span class="blog-date">28 de agosto, 2025</span>
+                            <span class="blog-source">Tecnek</span>
+                        </div>
+                        <h3>Botnet Mirai: una nueva amenaza de más de 1 Tbps</h3>
+                        <p>La nueva variante de Mirai detectada en agosto de 2025 es capaz de llevar a cabo ataques DDoS de más de 1 terabyte por segundo. Cómo se infectan los dispositivos y por qué sigue siendo tan peligrosa.</p>
+                        <span class="read-link">Leer análisis →</span>
+                    </div>
+                </a>
+
+                <!-- Post 12 - Kaspersky Smart Home -->
+                <a href="https://latam.kaspersky.com/resource-center/preemptive-safety/smart-home-security" target="_blank" rel="noopener" class="blog-row" data-category="iot">
+                    <div class="blog-row-image" style="background: linear-gradient(135deg, #0a1128 0%, #00d4ff 100%);">💡</div>
+                    <div class="blog-row-content">
+                        <div class="blog-row-meta">
+                            <span class="blog-tag">IoT</span>
+                            <span class="blog-date">Octubre 2025</span>
+                            <span class="blog-source">Kaspersky</span>
+                        </div>
+                        <h3>Cómo proteger tu hogar inteligente: la guía definitiva</h3>
+                        <p>Kaspersky repasa los riesgos de los hogares inteligentes y enumera las mejores prácticas: WPA3, contraseñas únicas, segmentación de red, actualizaciones de firmware y revisión de permisos de las apps.</p>
+                        <span class="read-link">Leer guía →</span>
+                    </div>
+                </a>
+
+                <!-- Post 13 - RedZone WiFi attack -->
+                <a href="https://www.redeszone.net/noticias/seguridad/nuevo-ataque-wifi-redes/" target="_blank" rel="noopener" class="blog-row" data-category="noticias">
+                    <div class="blog-row-image" style="background: linear-gradient(135deg, #0a1128 0%, #0077b6 100%);">📡</div>
+                    <div class="blog-row-content">
+                        <div class="blog-row-meta">
+                            <span class="blog-tag">Noticias</span>
+                            <span class="blog-date">Noviembre 2024</span>
+                            <span class="blog-source">RedesZone</span>
+                        </div>
+                        <h3>"Ataque al vecino más cercano": la nueva técnica que pone en jaque las redes WiFi</h3>
+                        <p>Un grupo de cibercriminales rusos está utilizando esta técnica para comprometer redes domésticas y empresariales aprovechándose de redes WiFi cercanas a la víctima como puente.</p>
+                        <span class="read-link">Leer noticia →</span>
+                    </div>
+                </a>
+
+                <!-- Post 14 - INCIBE Configuración router -->
+                <a href="https://www.incibe.es/empresas/blog/wpa3-mayor-actualizacion-redes-wi-fi-ultima-decada" target="_blank" rel="noopener" class="blog-row" data-category="analisis">
+                    <div class="blog-row-image" style="background: linear-gradient(135deg, #0a1128 0%, #ffb703 100%);">🔬</div>
+                    <div class="blog-row-content">
+                        <div class="blog-row-meta">
+                            <span class="blog-tag">Análisis</span>
+                            <span class="blog-date">INCIBE</span>
+                            <span class="blog-source">incibe.es</span>
+                        </div>
+                        <h3>WPA3: la mayor actualización en redes Wi-Fi de la última década</h3>
+                        <p>El INCIBE analiza en profundidad las novedades técnicas de WPA3: cifrado de 192 bits, Forward Secrecy, mejor protección frente a fuerza bruta y nuevas características pensadas para entornos IoT.</p>
+                        <span class="read-link">Leer análisis →</span>
+                    </div>
+                </a>
+
+                <!-- Post 15 - Cloudflare Mirai -->
+                <a href="https://www.cloudflare.com/es-es/learning/ddos/glossary/mirai-botnet/" target="_blank" rel="noopener" class="blog-row" data-category="iot">
+                    <div class="blog-row-image" style="background: linear-gradient(135deg, #0a1128 0%, #00d4ff 100%);">🌐</div>
+                    <div class="blog-row-content">
+                        <div class="blog-row-meta">
+                            <span class="blog-tag">IoT</span>
+                            <span class="blog-date">Cloudflare</span>
+                            <span class="blog-source">Cloudflare</span>
+                        </div>
+                        <h3>¿Qué es la botnet Mirai? Cómo convierte dispositivos IoT en zombies</h3>
+                        <p>Documentación oficial de Cloudflare sobre el funcionamiento de Mirai, sus variantes (Okiru, Satori, Masuta, Reaper) y cómo afecta a dispositivos IoT domésticos en 2025.</p>
+                        <span class="read-link">Leer documentación →</span>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- NEWSLETTER -->
+            <div class="newsletter-box">
+                <div class="newsletter-icon">📬</div>
+                <div class="newsletter-content">
+                    <h4>Mantente al día</h4>
+                    <p>Los artículos se actualizan periódicamente con noticias reales y guías prácticas de ciberseguridad doméstica.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='✓ ¡Gracias!'; this.querySelector('button').disabled=true;">
+                        <input type="email" placeholder="tu@email.com" required>
+                        <button type="submit" class="btn btn-primary">Suscribirme</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>SmartHome Security</h4>
+                <p>Proyecto Final del Grado Superior en Administración de Sistemas Informáticos en Red.</p>
+                <p style="margin-top: 1rem;"><strong>Guillem Villanueva Monclús</strong></p>
+                <p>Vedruna Vall · Terrassa</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="scripts.html">Scripts</a></li>
+                    <li><a href="about.html">Sobre el Proyecto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="https://www.incibe.es/" target="_blank" rel="noopener">INCIBE</a></li>
+                    <li><a href="https://www.osi.es/" target="_blank" rel="noopener">OSI</a></li>
+                    <li><a href="https://owasp.org/www-project-internet-of-things/" target="_blank" rel="noopener">OWASP IoT</a></li>
+                    <li><a href="https://nvd.nist.gov/" target="_blank" rel="noopener">NVD · CVE Database</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="#">📧 guillem.villanueva@example.com</a></li>
+                    <li><a href="#">🐙 GitHub</a></li>
+                    <li><a href="#">💼 LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 SmartHome Security · Proyecto Final Guillem Villanueva · Hecho con 💙 y mucha cafeína</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

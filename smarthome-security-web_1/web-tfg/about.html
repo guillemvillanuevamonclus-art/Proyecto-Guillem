@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre el Proyecto | SmartHome Security</title>
+    <meta name="description" content="Proyecto Final del Grado Superior en ASIX - Auditoría de seguridad en viviendas inteligentes por Guillem Villanueva Monclús.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🛡️</div>
+                <span>SmartHome Security</span>
+            </a>
+            <button class="menu-toggle" aria-label="Menú">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="scripts.html">Scripts</a></li>
+                <li><a href="about.html" class="active">Sobre el Proyecto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="hero-content fade-in">
+            <span class="hero-badge">🎓 Proyecto Final · ASIX · 2025-2026</span>
+            <h1>Sobre el Proyecto</h1>
+            <p>Un proyecto nacido de la curiosidad por entender cómo de seguras son realmente las viviendas inteligentes que tantos tenemos en casa.</p>
+        </div>
+    </section>
+
+    <!-- LA IDEA Y EL OBJETIVO (dos bloques tipo artículo) -->
+    <section class="section">
+        <div class="section-container">
+            <div class="two-column-story">
+                <div class="story-block">
+                    <div class="story-number">01</div>
+                    <h2>La idea</h2>
+                    <p>Este proyecto nace de una pregunta muy sencilla: <em>¿hasta qué punto es segura una casa "inteligente" típica?</em></p>
+                    <p>Cámaras, bombillas, altavoces, enchufes, cerraduras... todos prometen comodidad, pero casi nunca hablan de los riesgos que introducen. Quise comprobarlo yo mismo.</p>
+                    <p>El resultado es una auditoría completa de un entorno doméstico real, con pruebas prácticas, scripts desarrollados desde cero y una metodología que cualquiera podría replicar en su propia casa.</p>
+                </div>
+
+                <div class="story-block">
+                    <div class="story-number">02</div>
+                    <h2>El objetivo</h2>
+                    <p>No se trata solo de encontrar fallos. El verdadero objetivo es <strong>traducir la ciberseguridad a un lenguaje accesible</strong> para cualquier usuario doméstico.</p>
+                    <p>La mayoría de guías de seguridad están pensadas para empresas. Pero los hogares también necesitan protección, y muchas veces las recomendaciones son contradictorias o simplemente ignoran el contexto doméstico.</p>
+                    <p>Este proyecto quiere cerrar ese hueco: que cualquier persona, con o sin conocimientos técnicos, pueda hacer de su casa un lugar más seguro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OBJETIVOS (formato lista numerada horizontal, no cuadrados) -->
+    <section class="section" style="background: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+        <div class="section-container">
+            <h2 class="section-title">Objetivos <span>específicos</span></h2>
+            <p class="section-subtitle">Lo que este proyecto se propone conseguir, punto por punto</p>
+
+            <ol class="objectives-list">
+                <li>
+                    <span class="obj-icon">🎯</span>
+                    <div>
+                        <h4>Inventariar los dispositivos</h4>
+                        <p>Crear un mapa completo de los dispositivos conectados en un entorno doméstico real y su rol en la red, para entender la superficie de ataque.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="obj-icon">🔬</span>
+                    <div>
+                        <h4>Identificar vulnerabilidades</h4>
+                        <p>Detectar configuraciones inseguras, servicios expuestos y protocolos obsoletos mediante técnicas de auditoría reconocidas.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="obj-icon">⚔️</span>
+                    <div>
+                        <h4>Simular ataques controlados</h4>
+                        <p>Probar la efectividad de ataques comunes (fuerza bruta, desautenticación, MITM) en un entorno aislado y seguro.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="obj-icon">🛠️</span>
+                    <div>
+                        <h4>Desarrollar herramientas propias</h4>
+                        <p>Crear scripts automatizados que faciliten la auditoría inicial a usuarios no expertos, tanto para Linux como para Windows.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="obj-icon">📚</span>
+                    <div>
+                        <h4>Producir documentación útil</h4>
+                        <p>Elaborar guías claras y accionables para que cualquier usuario pueda aplicar las mejoras sin necesidad de conocimientos técnicos profundos.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="obj-icon">📊</span>
+                    <div>
+                        <h4>Medir el impacto real</h4>
+                        <p>Cuantificar la mejora de seguridad antes y después de aplicar las recomendaciones del proyecto, con datos comparables.</p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- HERRAMIENTAS (formato tags / pills con detalles ampliables) -->
+    <section class="section">
+        <div class="section-container">
+            <h2 class="section-title">Herramientas <span>utilizadas</span></h2>
+            <p class="section-subtitle">Stack técnico del proyecto, desde el reconocimiento hasta el informe final</p>
+
+            <div class="tools-layout">
+                <!-- SO -->
+                <div class="tools-category">
+                    <h3 class="tools-category-title">🖥️ Sistemas operativos</h3>
+                    <div class="tools-pills">
+                        <div class="tool-pill">
+                            <div class="tool-name">Kali Linux</div>
+                            <div class="tool-desc">SO principal para pruebas de auditoría</div>
+                        </div>
+                        <div class="tool-pill">
+                            <div class="tool-name">Ubuntu Server</div>
+                            <div class="tool-desc">Para simulaciones de laboratorio</div>
+                        </div>
+                        <div class="tool-pill">
+                            <div class="tool-name">Windows 11</div>
+                            <div class="tool-desc">Entorno de desarrollo y pruebas</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Análisis de red -->
+                <div class="tools-category">
+                    <h3 class="tools-category-title">🔍 Análisis de red</h3>
+                    <div class="tools-pills">
+                        <div class="tool-pill">
+                            <div class="tool-name">Nmap</div>
+                            <div class="tool-desc">Escaneo y descubrimiento de hosts</div>
+                        </div>
+                        <div class="tool-pill">
+                            <div class="tool-name">Wireshark</div>
+                            <div class="tool-desc">Análisis profundo del tráfico</div>
+                        </div>
+                        <div class="tool-pill">
+                            <div class="tool-name">Bettercap</div>
+                            <div class="tool-desc">Framework moderno para auditoría de red</div>
+                        </div>
+                        <div class="tool-pill">
+                            <div class="tool-name">Arp-scan</div>
+                            <div class="tool-desc">Descubrimiento rápido de la red local</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WiFi -->
+                <div class="tools-category">
+                    <h3 class="tools-category-title">📡 Auditoría WiFi</h3>
+                    <div class="tools-pills">
+                        <div class="tool-pill">
+                            <div class="tool-name">Aircrack-ng</div>
+                            <div class="tool-desc">Suite completa para análisis WiFi</div>
+                        </div>
+                        <div class="tool-pill">
+                            <div class="tool-name">Kismet</div>
+                            <div class="tool-desc">Detector de redes inalámbricas</div>
+                        </div>
+                        <div class="tool-pill">
+                            <div class="tool-name">Hashcat</div>
+                            <div class="tool-desc">Recuperación de contraseñas WiFi</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hardware -->
+                <div class="tools-category">
+                    <h3 class="tools-category-title">🔌 Hardware especializado</h3>
+                    <div class="tools-pills">
+                        <div class="tool-pill highlighted">
+                            <div class="tool-name">Flipper Zero</div>
+                            <div class="tool-desc">Multiherramienta para RF, BLE, NFC e IR</div>
+                        </div>
+                        <div class="tool-pill">
+                            <div class="tool-name">Adaptador WiFi USB</div>
+                            <div class="tool-desc">Chipset compatible con modo monitor</div>
+                        </div>
+                        <div class="tool-pill">
+                            <div class="tool-name">Raspberry Pi 4</div>
+                            <div class="tool-desc">Laboratorio aislado y Honeypot</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desarrollo -->
+                <div class="tools-category">
+                    <h3 class="tools-category-title">💻 Desarrollo y gestión</h3>
+                    <div class="tools-pills">
+                        <div class="tool-pill">
+                            <div class="tool-name">Bash</div>
+                            <div class="tool-desc">Script de auditoría Linux</div>
+                        </div>
+                        <div class="tool-pill">
+                            <div class="tool-name">PowerShell</div>
+                            <div class="tool-desc">Script de auditoría Windows</div>
+                        </div>
+                        <div class="tool-pill">
+                            <div class="tool-name">GitHub</div>
+                            <div class="tool-desc">Control de versiones y documentación</div>
+                        </div>
+                        <div class="tool-pill">
+                            <div class="tool-name">VS Code</div>
+                            <div class="tool-desc">Editor de código</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- METODOLOGÍA (timeline horizontal estilo ruta) -->
+    <section class="section">
+        <div class="section-container">
+            <h2 class="section-title">Metodología <span>de trabajo</span></h2>
+            <p class="section-subtitle">El proyecto sigue un enfoque estructurado en 8 fases, desde la investigación hasta la entrega final</p>
+
+            <div class="roadmap">
+                <div class="roadmap-step">
+                    <div class="roadmap-badge">01</div>
+                    <div class="roadmap-content">
+                        <h4>Investigación y marco teórico</h4>
+                        <p>Estudio del estado del arte en ciberseguridad doméstica y análisis del mercado IoT.</p>
+                    </div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-badge">02</div>
+                    <div class="roadmap-content">
+                        <h4>Definición del entorno</h4>
+                        <p>Inventario de dispositivos, mapa de red y definición de escenarios de amenaza.</p>
+                    </div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-badge">03</div>
+                    <div class="roadmap-content">
+                        <h4>Auditoría técnica</h4>
+                        <p>Ejecución del análisis de red, pruebas WiFi y evaluación de cada dispositivo IoT.</p>
+                    </div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-badge">04</div>
+                    <div class="roadmap-content">
+                        <h4>Pruebas prácticas</h4>
+                        <p>Simulación de ataques en entorno controlado para evaluar el impacto real.</p>
+                    </div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-badge">05</div>
+                    <div class="roadmap-content">
+                        <h4>Desarrollo de herramientas</h4>
+                        <p>Creación de los scripts de auditoría automatizada para Linux y Windows.</p>
+                    </div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-badge">06</div>
+                    <div class="roadmap-content">
+                        <h4>Aplicación de contramedidas</h4>
+                        <p>Implementación de mejoras, endurecimiento del router y segmentación de red.</p>
+                    </div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-badge">07</div>
+                    <div class="roadmap-content">
+                        <h4>Re-evaluación</h4>
+                        <p>Segunda auditoría para medir la mejora real y elaborar la comparativa antes/después.</p>
+                    </div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-badge">08</div>
+                    <div class="roadmap-content">
+                        <h4>Documentación y entregables</h4>
+                        <p>Redacción de la memoria, presentación, publicación de la web y los scripts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section class="section">
+        <div class="section-container">
+            <h2 class="section-title">Sobre <span>el autor</span></h2>
+
+            <div class="author-card">
+                <div class="author-avatar">👨‍💻</div>
+                <div class="author-info">
+                    <h3>Guillem Villanueva Monclús</h3>
+                    <div class="author-role">Estudiante de ASIX · Vedruna Vall · Terrassa</div>
+                    <p>Apasionado de la ciberseguridad, los sistemas y todo lo que tenga que ver con redes. Este proyecto es la culminación de dos años de formación en administración de sistemas y el punto de partida para especializarme en ciberseguridad.</p>
+                    <div class="author-links">
+                        <a href="#" class="btn btn-secondary">🐙 GitHub</a>
+                        <a href="#" class="btn btn-secondary">💼 LinkedIn</a>
+                        <a href="#" class="btn btn-secondary">📧 Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>SmartHome Security</h4>
+                <p>Proyecto Final del Grado Superior en Administración de Sistemas Informáticos en Red.</p>
+                <p style="margin-top: 1rem;"><strong>Guillem Villanueva Monclús</strong></p>
+                <p>Vedruna Vall · Terrassa</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="scripts.html">Scripts</a></li>
+                    <li><a href="about.html">Sobre el Proyecto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="https://www.incibe.es/" target="_blank">INCIBE</a></li>
+                    <li><a href="https://www.osi.es/" target="_blank">OSI</a></li>
+                    <li><a href="https://owasp.org/www-project-internet-of-things/" target="_blank">OWASP IoT</a></li>
+                    <li><a href="https://nvd.nist.gov/" target="_blank">NVD · CVE Database</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="#">📧 guillem.villanueva@example.com</a></li>
+                    <li><a href="#">🐙 GitHub</a></li>
+                    <li><a href="#">💼 LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 SmartHome Security · Proyecto Final Guillem Villanueva · Hecho con 💙 y mucha cafeína</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
