@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "network": "192.168.0.0/24",
+    "interface": "eth0",
+    "gateway": "192.168.0.1",
+    "public_ip": "2.154.240.25",
+    "timestamp": "2026-05-05 14:11:33",
+    "duration": 10.993610382080078,
+    "ports_scanned": 10,
+    "mode": "fast",
+    "modules_enabled": [
+      "discovery",
+      "portscan",
+      "fingerprint",
+      "scoring",
+      "reporting",
+      "cve_lookup"
+    ]
+  },
+  "devices": [
+    {
+      "ip": "192.168.0.1",
+      "mac": "02:10:18:BA:00:54",
+      "hostname": "easybox",
+      "vendor": "",
+      "device_type": "Dispositivo IoT (panel web)",
+      "type_risk": "medio",
+      "os_guess": "",
+      "open_ports": [
+        80
+      ],
+      "services": {
+        "80": {
+          "port": 80,
+          "protocol": "tcp",
+          "name": "HTTP",
+          "banner": "Server: WebServer",
+          "product": "",
+          "version": "",
+          "cpe": "",
+          "classification": "INSEGURO",
+          "cves": []
+        }
+      },
+      "findings": [
+        {
+          "severity": "ALTA",
+          "category": "port",
+          "title": "Puerto 80/HTTP transmite sin cifrar",
+          "description": "HTTP envía información en claro por la red. Puede ser interceptado con sniffing.",
+          "reference": "",
+          "cvss_score": 0.0,
+          "recommendation": "Usar la variante cifrada equivalente (HTTPS, SFTP, IMAPS, SMTPS, MQTT-TLS...)."
+        }
+      ],
+      "risk_score": 16,
+      "risk_level": "MEDIO",
+      "total_cves": 0,
+      "critical_cves": 0
+    },
+    {
+      "ip": "192.168.0.16",
+      "mac": "CC:15:31:AA:50:69",
+      "hostname": "DESKTOP-VD2998V",
+      "vendor": "",
+      "device_type": "Desconocido",
+      "type_risk": "bajo",
+      "os_guess": "",
+      "open_ports": [],
+      "services": {},
+      "findings": [],
+      "risk_score": 0,
+      "risk_level": "MÍNIMO",
+      "total_cves": 0,
+      "critical_cves": 0
+    },
+    {
+      "ip": "192.168.0.27",
+      "mac": "",
+      "hostname": "kali",
+      "vendor": "",
+      "device_type": "Desconocido",
+      "type_risk": "bajo",
+      "os_guess": "",
+      "open_ports": [],
+      "services": {},
+      "findings": [],
+      "risk_score": 0,
+      "risk_level": "MÍNIMO",
+      "total_cves": 0,
+      "critical_cves": 0
+    },
+    {
+      "ip": "192.168.0.122",
+      "mac": "A4:36:C7:6E:25:D0",
+      "hostname": "",
+      "vendor": "",
+      "device_type": "Desconocido",
+      "type_risk": "bajo",
+      "os_guess": "",
+      "open_ports": [],
+      "services": {},
+      "findings": [],
+      "risk_score": 0,
+      "risk_level": "MÍNIMO",
+      "total_cves": 0,
+      "critical_cves": 0
+    },
+    {
+      "ip": "192.168.0.173",
+      "mac": "20:BE:B8:F8:06:E7",
+      "hostname": "echoshow-06e5679f522d140f",
+      "vendor": "",
+      "device_type": "Amazon Echo / Alexa",
+      "type_risk": "medio",
+      "os_guess": "",
+      "open_ports": [],
+      "services": {},
+      "findings": [],
+      "risk_score": 0,
+      "risk_level": "MÍNIMO",
+      "total_cves": 0,
+      "critical_cves": 0
+    },
+    {
+      "ip": "192.168.0.194",
+      "mac": "CA:B2:02:42:C5:E8",
+      "hostname": "",
+      "vendor": "",
+      "device_type": "Desconocido",
+      "type_risk": "bajo",
+      "os_guess": "",
+      "open_ports": [],
+      "services": {},
+      "findings": [],
+      "risk_score": 0,
+      "risk_level": "MÍNIMO",
+      "total_cves": 0,
+      "critical_cves": 0
+    },
+    {
+      "ip": "192.168.0.245",
+      "mac": "AC:F4:73:19:17:12",
+      "hostname": "",
+      "vendor": "",
+      "device_type": "Desconocido",
+      "type_risk": "bajo",
+      "os_guess": "",
+      "open_ports": [],
+      "services": {},
+      "findings": [],
+      "risk_score": 0,
+      "risk_level": "MÍNIMO",
+      "total_cves": 0,
+      "critical_cves": 0
+    }
+  ],
+  "wifi_networks": [],
+  "traffic_summary": {},
+  "conclusions": {
+    "resumen": {
+      "total_dispositivos": 7,
+      "por_nivel": {
+        "CRÍTICO": 0,
+        "ALTO": 0,
+        "MEDIO": 1,
+        "BAJO": 0,
+        "MÍNIMO": 6
+      },
+      "score_medio": 2.3,
+      "riesgo_global": "BAJO"
+    },
+    "cve_resumen": {
+      "total_cves": 0,
+      "cves_criticos": 0,
+      "cves_en_kev": 0
+    },
+    "protocolos_inseguros": {
+      "telnet": 0,
+      "ftp": 0,
+      "http_sin_tls": 1,
+      "smb_netbios": 0,
+      "upnp": 0,
+      "cleartext_total": 1
+    },
+    "top_riesgo": [
+      {
+        "ip": "192.168.0.1",
+        "tipo": "Dispositivo IoT (panel web)",
+        "score": 16,
+        "nivel": "MEDIO",
+        "cves": 0,
+        "cves_criticos": 0
+      },
+      {
+        "ip": "192.168.0.16",
+        "tipo": "Desconocido",
+        "score": 0,
+        "nivel": "MÍNIMO",
+        "cves": 0,
+        "cves_criticos": 0
+      },
+      {
+        "ip": "192.168.0.27",
+        "tipo": "Desconocido",
+        "score": 0,
+        "nivel": "MÍNIMO",
+        "cves": 0,
+        "cves_criticos": 0
+      },
+      {
+        "ip": "192.168.0.122",
+        "tipo": "Desconocido",
+        "score": 0,
+        "nivel": "MÍNIMO",
+        "cves": 0,
+        "cves_criticos": 0
+      },
+      {
+        "ip": "192.168.0.173",
+        "tipo": "Amazon Echo / Alexa",
+        "score": 0,
+        "nivel": "MÍNIMO",
+        "cves": 0,
+        "cves_criticos": 0
+      }
+    ],
+    "recomendaciones": [
+      "Los paneles de administración por HTTP plano son interceptables. Forzar HTTPS o restringir el acceso a la red interna.",
+      "Mantener el firmware del router y de todos los dispositivos IoT actualizado periódicamente.",
+      "Separar la red IoT de la red principal mediante SSID de invitados o una VLAN dedicada.",
+      "Desactivar servicios y cuentas no utilizadas en cada dispositivo.",
+      "Usar WPA3 (o como mínimo WPA2-AES) con contraseñas robustas de más de 16 caracteres.",
+      "Cambiar credenciales por defecto en TODOS los dispositivos: routers, cámaras, NAS, impresoras, asistentes de voz.",
+      "Activar el cortafuegos del router y bloquear tráfico entrante no solicitado.",
+      "Establecer una política de auditorías periódicas (ejecutar esta herramienta mensualmente).",
+      "Revisar los permisos y políticas de privacidad de las apps móviles asociadas a cada dispositivo IoT."
+    ]
+  }
+}

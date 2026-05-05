@@ -1,0 +1,101 @@
+==============================================================================
+  SMART HOME SECURITY AUDIT — INFORME TÉCNICO
+==============================================================================
+
+  Fecha         : 2026-05-05 14:11:33
+  Red auditada  : 192.168.0.0/24
+  Interfaz      : eth0
+  Gateway       : 192.168.0.1
+  IP pública    : 2.154.240.25
+  Duración      : 11.0s
+  Modo          : fast
+  Puertos/host  : 10
+
+------------------------------------------------------------------------------
+  RESUMEN EJECUTIVO
+------------------------------------------------------------------------------
+
+  Riesgo global ........... BAJO
+  Score medio ............. 2.3/100
+  Dispositivos totales .... 7
+
+    · CRÍTICO : 0
+    · ALTO    : 0
+    · MEDIO   : 1
+    · BAJO    : 0
+    · MÍNIMO  : 6
+
+  CVEs totales ............ 0
+  CVEs críticos ........... 0
+  CVEs en KEV (CISA) ...... 0
+
+  Exposición de protocolos inseguros:
+    · telnet              : 0 dispositivos
+    · ftp                 : 0 dispositivos
+    · http_sin_tls        : 1 dispositivos
+    · smb_netbios         : 0 dispositivos
+    · upnp                : 0 dispositivos
+    · cleartext_total     : 1 dispositivos
+
+  Top dispositivos de mayor riesgo:
+    1. 192.168.0.1     Dispositivo IoT (panel web) MEDIO    (score 16, 0 CVEs)
+    2. 192.168.0.16    Desconocido               MÍNIMO   (score 0, 0 CVEs)
+    3. 192.168.0.27    Desconocido               MÍNIMO   (score 0, 0 CVEs)
+    4. 192.168.0.122   Desconocido               MÍNIMO   (score 0, 0 CVEs)
+    5. 192.168.0.173   Amazon Echo / Alexa       MÍNIMO   (score 0, 0 CVEs)
+
+------------------------------------------------------------------------------
+  INVENTARIO DE DISPOSITIVOS
+------------------------------------------------------------------------------
+
+  ▸ 192.168.0.1  [MEDIO]  (score 16)
+      MAC         : 02:10:18:BA:00:54
+      Hostname    : easybox
+      Tipo        : Dispositivo IoT (panel web)
+      Puertos abiertos:
+        [   80] HTTP           INSEGURO  
+      Hallazgos:
+        [ALTA] Puerto 80/HTTP transmite sin cifrar
+
+  ▸ 192.168.0.16  [MÍNIMO]  (score 0)
+      MAC         : CC:15:31:AA:50:69
+      Hostname    : DESKTOP-VD2998V
+      Tipo        : Desconocido
+
+  ▸ 192.168.0.27  [MÍNIMO]  (score 0)
+      Hostname    : kali
+      Tipo        : Desconocido
+
+  ▸ 192.168.0.122  [MÍNIMO]  (score 0)
+      MAC         : A4:36:C7:6E:25:D0
+      Tipo        : Desconocido
+
+  ▸ 192.168.0.173  [MÍNIMO]  (score 0)
+      MAC         : 20:BE:B8:F8:06:E7
+      Hostname    : echoshow-06e5679f522d140f
+      Tipo        : Amazon Echo / Alexa
+
+  ▸ 192.168.0.194  [MÍNIMO]  (score 0)
+      MAC         : CA:B2:02:42:C5:E8
+      Tipo        : Desconocido
+
+  ▸ 192.168.0.245  [MÍNIMO]  (score 0)
+      MAC         : AC:F4:73:19:17:12
+      Tipo        : Desconocido
+
+------------------------------------------------------------------------------
+  RECOMENDACIONES
+------------------------------------------------------------------------------
+
+   1. Los paneles de administración por HTTP plano son interceptables. Forzar HTTPS o restringir el acceso a la red interna.
+   2. Mantener el firmware del router y de todos los dispositivos IoT actualizado periódicamente.
+   3. Separar la red IoT de la red principal mediante SSID de invitados o una VLAN dedicada.
+   4. Desactivar servicios y cuentas no utilizadas en cada dispositivo.
+   5. Usar WPA3 (o como mínimo WPA2-AES) con contraseñas robustas de más de 16 caracteres.
+   6. Cambiar credenciales por defecto en TODOS los dispositivos: routers, cámaras, NAS, impresoras, asistentes de voz.
+   7. Activar el cortafuegos del router y bloquear tráfico entrante no solicitado.
+   8. Establecer una política de auditorías periódicas (ejecutar esta herramienta mensualmente).
+   9. Revisar los permisos y políticas de privacidad de las apps móviles asociadas a cada dispositivo IoT.
+==============================================================================
+  Generado por Smart Home Security Audit · 2026-05-05 14:11:33
+==============================================================================
